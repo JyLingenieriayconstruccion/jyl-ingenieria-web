@@ -1,132 +1,3 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>J&L Ingeniería y Construcción S.A.S</title>
-
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
-body{
-background:#000;
-color:#fff;
-}
-
-header{
-background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
-url('banner-jyl.png');
-background-size:cover;
-background-position:center;
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-}
-
-.logo{
-font-size:80px;
-font-weight:bold;
-color:#d4af37;
-}
-
-.subtitulo{
-font-size:22px;
-margin:20px;
-max-width:800px;
-}
-
-.botones{
-margin-top:20px;
-}
-
-.btn{
-display:inline-block;
-padding:15px 25px;
-margin:8px;
-background:#d4af37;
-color:#000;
-text-decoration:none;
-font-weight:bold;
-border-radius:8px;
-transition:.3s;
-}
-
-.btn:hover{
-background:white;
-}
-
-section{
-padding:70px 10%;
-}
-
-h2{
-color:#d4af37;
-text-align:center;
-margin-bottom:30px;
-}
-
-.servicios{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.card{
-background:#111;
-padding:25px;
-border-radius:10px;
-border:1px solid #d4af37;
-text-align:center;
-}
-
-.card:hover{
-transform:scale(1.03);
-transition:.3s;
-}
-
-footer{
-background:#111;
-padding:30px;
-text-align:center;
-border-top:2px solid #d4af37;
-}
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px 20px;
-border-radius:50px;
-font-size:20px;
-text-decoration:none;
-font-weight:bold;
-}
-</style>
-
-</head>
-
-<body>
-
-<header>
-
-<div class="logo">J&L</div>
-
-<p class="subtitulo">
-J&L Ingeniería y Construcción S.A.S<br>
-Licencias de Construcción • Estudios de Suelos • Topografía • Diseños Arquitectónicos • Diseños Estructurales • Construcción y Remodelación
-</p>
-
 <div class="botones">
 
 <a href="https://wa.me/573124306226" class="btn" target="_blank">
@@ -141,77 +12,52 @@ Licencias de Construcción • Estudios de Suelos • Topografía • Diseños A
 📷 Instagram J&L
 </a>
 
-<a href="#servicios" class="btn">
-🏗️ Servicios
-</a>
-
 </div>
+header{
+background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+url('banner-jyl.png');
+background-size:cover;
+background-position:center;
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+  <section id="proyectos">
 
-</header>
+<h2>NUESTROS PROYECTOS</h2>
 
-<section id="servicios">
+<div class="galeria">
 
-<h2>NUESTROS SERVICIOS</h2>
-
-<div class="servicios">
-
-<div class="card">Licencias de Construcción</div>
-
-<div class="card">Estudios de Suelos</div>
-
-<div class="card">Topografía</div>
-
-<div class="card">Diseños Arquitectónicos</div>
-
-<div class="card">Diseños Estructurales</div>
-
-<div class="card">Diseño de Pavimentos</div>
-
-<div class="card">Construcción de Viviendas</div>
-
-<div class="card">Remodelaciones</div>
-
-<div class="card">Interventoría y Consultoría</div>
+<img src="proyecto1.jpg">
+<img src="proyecto2.jpg">
+<img src="proyecto3.jpg">
+<img src="proyecto4.jpg">
+<img src="proyecto5.jpg">
+<img src="proyecto6.jpg">
+<img src="proyecto8.jpg">
 
 </div>
 
 </section>
+.galeria{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:20px;
+}
 
-<section>
+.galeria img{
+width:100%;
+height:300px;
+object-fit:cover;
+border-radius:15px;
+border:3px solid #d4af37;
+transition:.3s;
+}
 
-<h2>CONTÁCTANOS</h2>
-
-<div style="text-align:center;line-height:2;">
-
-<p>Ing. Juan Pablo Álvarez Velandia</p>
-
-<p>Ingeniero Civil</p>
-
-<p>Especialista en Vías y Pavimentos</p>
-
-<p>📞 312 430 6226</p>
-
-<p>📍 Girardot - Cundinamarca</p>
-
-</div>
-
-</section>
-
-<footer>
-
-<h3>J&L Ingeniería y Construcción S.A.S</h3>
-
-<p>Licencias de Construcción • Estudios de Suelos • Topografía</p>
-
-<p>Diseños Arquitectónicos • Diseños Estructurales • Pavimentos</p>
-
-</footer>
-
-<a class="whatsapp"
-href="https://wa.me/573124306226"
-target="_blank">
-WhatsApp
-</a>
-
-</body>
-</html>
+.galeria img:hover{
+transform:scale(1.05);
+box-shadow:0 0 20px #d4af37;
+}
